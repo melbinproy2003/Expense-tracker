@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.username {
+    font-size: 16px;
+}
+
+/* Form */
+.expense-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.form-button, .cancel-button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out;
+}
+
+.form-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #b02a37;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    justify-content: end;
+}
+
+.category-filter {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+/* Expense List */
+.expenses-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #007bff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.expense-item:hover {
+    transform: scale(1.02);
+}
+
+.expense-details {
+    flex: 1;
+}
+
+.expense-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-button, .delete-button {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.2s ease-in-out;
+}
+
+.edit-button {
+    background-color: #26c7f4;
+    color: black;
+}
+
+.edit-button:hover {
+    background-color: #4be87d;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #b02a37;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background 0.2s ease-in-out;
+}
+
+.pagination-button:hover {
+    background-color: #0056b3;
+}
+
+.pagination-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.logout-button {
+    background-color: #ff4d4d; /* Red color for logout */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
