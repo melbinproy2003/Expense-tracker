@@ -117,7 +117,6 @@ const Dashboard = () => {
       <div className="header">
         <h2 className="dashboard-title">Expense Dashboard</h2>
         <div className="user-info">
-          <span className="username">Welcome, {username}</span>
           <button onClick={handleLogout} className="logout-button">Logout</button>
         </div>
       </div>
